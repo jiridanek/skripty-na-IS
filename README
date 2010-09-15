@@ -1,0 +1,42 @@
+Vyhledá jména z předloženého texťáku v IS MUNI a vygeneruje přehlednou HTML stránku s výsledky
+
+Verze ze dne 21. 07. 2010
+
+Použití
+
+1) V souboru auth_muni.py je potřeba nastavit vaše heslo pro přístup do neveřejné části ISu
+2) Editujte soubor krok2.py, aby vyhovoval vašim potřebám
+3) Vytvořte složky "cache" (cachuje se zde vše, co se stahuje z internetu) a
+ 	"gfx" (sem se nakopíruje grafika (jako jsou fotky studentů) pro offline prohlížení)
+4) Spusťte krok2.py
+5) Pročtěte si výstupní HTML stránku - kochejte se!
+
+Požadavky
+
+- Heslo do https://IS.MUNI.cz/auth . Musíte mít v ISu nahranou vlastní fotografii, jinak neuvidíte fotky kolegů
+- Python dvojkové řady
+- knihovnu BeautifulSoup ("sudo aptitude python-beautifulsoup")
+
+Chyby:
+
+- FIXED (a nebylo to tak hrozný ;-): Obrázky se necachujou. (protože opravit to by vyžadovalo trochu přemýšlení a trochu přepisování)
+- Cpe to <hr> i tam, kde by neměl být (hned za jméno studentky). Ale to ničemu nevadí :P
+- Používám catch-all excepty při odchytávání vyjímek
+- Chtělo by to debugovací hlášky...
+- Cachovat by se asi mělo v rámci urllib2.geturl, pomocí nějakých handlerů a providerů... ne jak to mám já
+- Nezpracuje studenta, s jehož údaji se program přihlašuje
+	(IS potom do jeho stránky přidá klikátka a JavaScripty
+	 sloužící k úpavě údajů a něco z toho odrovná knihovnu BeautifulSoup,
+	 takže se stránka nenačte celá)
+- Neumí přejít na další stránky výsledků hledání -> najde jen prvních 30 lidí, ale i to je dost :D
+- Neodlišuje studenty od profesorů -> vypíše všechny ;-), ale to vlastně není chyba
+- Nevypořádá se s víceoborovým studiem (vypíše jen první obor z každého studijního programu)
+
+Fixme:
+
+- Jak lépe zarovnat výsledky od jednoho jména? současný hr {clear:both} vyžaduje, abych dopředu určil počet sloupců
+
+Wontfix:
+
+- Všechno. Už jsem do toho vrtal až dost. Možná někdy zkusím opustit BeautifulSoup a navigovat se v HTML sám
+   a mohl bych to zkusit v C# (cis)? ...

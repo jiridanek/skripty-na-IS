@@ -60,7 +60,7 @@ def zpracuj_tridu(_tridy,_trida, _lidi):
 
 
 <h1 align="center">Spolužáci na <i>MUNI</i></h1>'''
-	print >>o, '''<h6 align="center"><i>Ke dni: ''' + str(datetime.date.today()) + '''</i></h1>'''
+	print >>o, '''<h6 align="center"><i>Ke dni: ''' + str(datetime.date.today()) + '''</i></h6>'''
 	print >>o, '''<ul class="menu">'''
 	print >>o, u'''<li><a class="first" href="''' + str(base_url.decode('utf-8')) + u'''/''' + str(_tridy[0].decode('utf-8')) + u'''/">''' + str(_tridy[0].decode('utf-8')) + u'''</a></li>'''
 	for t in _tridy[1:]:
