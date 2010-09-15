@@ -1,0 +1,101 @@
+body
+{
+	background-color: #FFE;
+}
+
+/* Zdroj: http://www.secondpicture.com/tutorials/web_design/css_ul_li_horizontal_css_menu.html */
+.menu
+{
+list-style-type: none;
+background-color: #FFD;
+height: 80px;
+width: 663px;
+margin: auto;
+}
+
+.menu li 
+{
+float:left;
+}
+
+.a {
+border-right: 7px white solid;
+padding-right: 25px;
+padding-left: 25px;
+display: block;
+line-height: 80px;
+text-decoration: none;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 21px;
+color: #371C1C;
+}
+
+.b {float:right;}
+
+.first {
+border-left: 7px white solid;
+border-right: 7px white solid;
+padding-left: 25px;
+padding-right: 25px;
+display: block;
+line-height: 80px;
+text-decoration: none;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 21px;
+color: #371C1C;
+}
+
+h3
+{
+	margin-left: 2em;
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-width:5px;
+	border-color:skyblue;
+	border-style:dotted;
+	border-radius: 5em;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em
+}
+
+.zaznam
+{
+	width: 25em; 
+	margin-left: 7em;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-width:5px;
+	border-color:skyblue;
+	border-style:solid;
+	border-radius: 5em;
+	float: left;
+	-moz-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em
+}
+.clovek
+{
+	clear:both;
+}
+
+.error
+{
+	text-size:3em;
+	color:#f60;
+}
+
+.error:first-letter {color:#F61}
+
+iframe {
+	margin-left:1.5em;
+	margin-top:1em;
+}
+
+hr
+{
+	visibility:hidden;
+	clear: both;
+}
