@@ -1,3 +1,10 @@
+"""
+Cache pro stránky stahované z IS.muni.cz
+
+"""
+
+#TODO: datum vytvoření souboru
+
 import base64
 import urllib2
 import os.path
