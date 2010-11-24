@@ -3,12 +3,14 @@
 
 import cgi
 import xml.dom.minidom
+import databaze_predmetu
+import parse_predmet
 
 import re
 #cgitb.enable()
 
 OBDOBI = "podzim2010"
-FAKULTY = {'LF' : 1411 , 'FF' : 1421 , 'PrF' : 1422 , 'FSS' : 1423 , u'PřF' : 1431 , 'FI' : 1433, 'PdF' : 1441 , 'ESF' : 1456 , 'FSpS' : 1451, 'CUS' : 1490}  
+DBFILE = 'predmety.db'
 STUDIJNI_MATERIALY="https://is.muni.cz/auth/student/studijni_materialy.pl"
 
 class Predmet:
@@ -24,6 +26,12 @@ class Predmet:
 		self.base_predmet_url = "https://is.muni.cz/auth/predmety/predmet.pl?id="
 		self.base_ucebna_url="https://is.muni.cz/auth/kontakty/mistnost.pl?id="
 		self.template_materialy_url = "https://is.muni.cz/auth/dok/rfmgr.pl?furl=/el/{fakulta}/{obdobi}/" + self.jmeno + "/" #{predmet}/"
+	def download_info(self):
+		self.fid = databaze_predmetu.DB(DBFILE).findFid(self.kod)
+		if self.fid: return
+		parse = parse_predmet.DoParsePredmet(self.pid)
+		self.fid = parse.fid
+		parse.storetoDB(DBFILE)
 	def to_div(self):
 		pass
 	def get_predmet_url(self):
@@ -48,7 +56,7 @@ def dira(radek, predmet):
 	for index,predmet in enumerate(predmety):
 		if predmet.get_odcas_s() > predmet.get_odcas_s():
 			break
-		not index +1 == length predmety
+#		if not index +1 == length (predmety): pass
 
 def group_by(co, podle_ceho):
 	grupy={}
@@ -71,13 +79,40 @@ def group_by(co, podle_ceho):
 #		if 
 ###
 
+class Den:
+	def __init__(self, kod=""):
+		self.kod = kod
+		self.predmety=[]
+		self.radky=[]
+	def pridej_predmet(predmet):
+		pass
+#	def 
+
+class Rozvrh:
+	def __init__(self, ):
+		self.po = Den(u"Po")
+		self.ut = Den(u"Út")
+		self.st = Den(u"St")
+		self.ct = Den(u"Čt")
+		self.pa = Den(u"Pá")
+		self.na = Den(None)
+	def pridej_predmet(self, predmet):
+		if(predmet.den == self.po.kod) : self.po.pridej_predmet(predmet)
+		if(predmet.den == self.ut.kod) : self.po.pridej_predmet(predmet)
+		if(predmet.den == self.st.kod) : self.po.pridej_predmet(predmet)
+		if(predmet.den == self.ct.kod) : self.po.pridej_predmet(predmet)
+		if(predmet.den == self.pa.kod) : self.po.pridej_predmet(predmet)
+		if(predmet.den == self.na.kod) : self.po.pridej_predmet(predmet)
+	def jako_div():
+		pass
+
 print "Content-Type: text/html"     # HTML is following
 print                               # blank line, end of headers
 
 #form = cgi.FieldStorage()
 #if "xmlko" not in form:
 #    print "<H1>Error</H1>"
-#    print "®ádný rozvrh ke zpracování."
+#    print "ÂŽĂĄdnĂ˝ rozvrh ke zpracovĂĄnĂ­."
 
 fajl = open("rozvrh.xml")
 doc = xml.dom.minidom.parseString(fajl.read())
@@ -110,4 +145,7 @@ else:
 		
 		p = Predmet(nazev, kod, predmetid, [(mistnost, mistnostid)], odcas, docas, denid)
 		predmety.append(p)
-	
+
+if __name__ == "__main__":
+	for p in predmety:
+		p.download_info()
