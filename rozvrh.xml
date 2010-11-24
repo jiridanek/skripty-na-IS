@@ -1,0 +1,325 @@
+<rozvrh>
+
+<minhod>420</minhod>
+<maxhod>1190</maxhod>
+<hodiny>
+	<hodina><od>7:00</od><do>7:50</do></hodina>
+	<hodina><od>8:00</od><do>8:50</do></hodina>
+	<hodina><od>9:00</od><do>9:50</do></hodina>
+	<hodina><od>10:00</od><do>10:50</do></hodina>
+	<hodina><od>11:00</od><do>11:50</do></hodina>
+	<hodina><od>12:00</od><do>12:50</do></hodina>
+	<hodina><od>13:00</od><do>13:50</do></hodina>
+	<hodina><od>14:00</od><do>14:50</do></hodina>
+	<hodina><od>15:00</od><do>15:50</do></hodina>
+	<hodina><od>16:00</od><do>16:50</do></hodina>
+	<hodina><od>17:00</od><do>17:50</do></hodina>
+	<hodina><od>18:00</od><do>18:50</do></hodina>
+	<hodina><od>19:00</od><do>19:50</do></hodina>
+
+</hodiny>
+<tabulka>
+<den id="Po" rows="4">
+<radek num="1">
+
+	<slot pdiff="13" diff="22" odcas="07:00" docas="08:50">
+		<mistnost>A11/132</mistnost>
+		<mistnostid>11663</mistnostid>
+		<akce><kod>C7777</kod><nazev>Zacházení s chemickými látkami</nazev><predmetid>558000</predmetid></akce>
+	</slot>
+	<break pdiff="22" diff="38"/>
+
+	<slot pdiff="13" diff="22" odcas="12:00" docas="13:50">
+		<mistnost>A22/Aula</mistnost>
+		<mistnostid>11689</mistnostid>
+		<akce><kod>Bi1700</kod><nazev>Buněčná biologie</nazev><predmetid>557446</predmetid></akce>
+	</slot>
+	<break pdiff="15" diff="26"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>IB015</kod><nazev>Úvod do funkc. programování</nazev><predmetid>585044</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="18:00" docas="19:50">
+		<mistnost>B003</mistnost>
+		<mistnostid>713</mistnostid>
+		<akce><kod>MB000/01</kod><nazev>Matematická analýza I</nazev><predmetid>585078</predmetid></akce>
+	</slot>
+</radek>
+<radek num="2">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="13" diff="22" odcas="08:00" docas="09:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>IB000</kod><nazev>Úvod do informatiky</nazev><predmetid>585042</predmetid></akce>
+	</slot>
+	<break pdiff="44" diff="74"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>IB015</kod><nazev>Úvod do funkc. programování</nazev><predmetid>585044</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="18:00" docas="19:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>MB101</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+</radek>
+<radek num="3">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="13" diff="22" odcas="08:00" docas="09:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>IB000</kod><nazev>Úvod do informatiky</nazev><predmetid>585042</predmetid></akce>
+	</slot>
+	<break pdiff="44" diff="74"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D3</mistnost>
+		<mistnostid>2362</mistnostid>
+		<akce><kod>IB015</kod><nazev>Úvod do funkc. programování</nazev><predmetid>585044</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="18:00" docas="19:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>MB101</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+</radek>
+<radek num="4">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="13" diff="22" odcas="08:00" docas="09:50">
+		<mistnost>D3</mistnost>
+		<mistnostid>2362</mistnostid>
+		<akce><kod>IB000</kod><nazev>Úvod do informatiky</nazev><predmetid>585042</predmetid></akce>
+	</slot>
+	<break pdiff="58" diff="98"/>
+
+	<slot pdiff="13" diff="22" odcas="18:00" docas="19:50">
+		<mistnost>D3</mistnost>
+		<mistnostid>2362</mistnostid>
+		<akce><kod>MB101</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+</radek>
+</den>
+<den id="Út" rows="4">
+<radek num="1">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="20" diff="34" odcas="08:00" docas="10:50">
+		<mistnost>A11/306</mistnost>
+		<mistnostid>11680</mistnostid>
+		<akce><kod>Bi1010</kod><nazev>Systém a evoluce rostlin</nazev><predmetid>557425</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="12:00" docas="13:50">
+		<mistnost>B130</mistnost>
+		<mistnostid>4384</mistnostid>
+		<akce><kod>IB015/01</kod><nazev>Úvod do funkc. programování</nazev><predmetid>585044</predmetid></akce>
+	<poznamka id="1"/>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="14:00" docas="15:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>MB101</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>PB001</kod><nazev>Úvod do IT</nazev><predmetid>585110</predmetid></akce>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+<radek num="2">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="13" diff="22" odcas="08:00" docas="09:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>MB101</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+	<break pdiff="44" diff="74"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>PB001</kod><nazev>Úvod do IT</nazev><predmetid>585110</predmetid></akce>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+<radek num="3">
+	<break pdiff="64" diff="108"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>D3</mistnost>
+		<mistnostid>2362</mistnostid>
+		<akce><kod>PB001</kod><nazev>Úvod do IT</nazev><predmetid>585110</predmetid></akce>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+<radek num="4">
+	<break pdiff="64" diff="108"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>M2,01021</mistnost>
+		<mistnostid>7879</mistnostid>
+		<akce><kod>M1110/03</kod><nazev>Lineární algebra a geom. I</nazev><predmetid>556680</predmetid></akce>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+</den>
+<den id="St" rows="1">
+<radek num="1">
+	<break pdiff="14" diff="24"/>
+
+	<slot pdiff="13" diff="22" odcas="09:00" docas="10:50">
+		<mistnost>COMPK6,609</mistnost>
+		<mistnostid>9678</mistnostid>
+		<akce><kod>Bi2011</kod><nazev>Teor. zákl. informatiky</nazev><predmetid>557447</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="11:00" docas="12:50">
+		<mistnost>COMPK6,609</mistnost>
+		<mistnostid>9678</mistnostid>
+		<akce><kod>Bi2011</kod><nazev>Teor. zákl. informatiky</nazev><predmetid>557447</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="14:00" docas="15:50">
+		<mistnost>B003</mistnost>
+		<mistnostid>713</mistnostid>
+		<akce><kod>MB101/15</kod><nazev>Matematika I</nazev><predmetid>585082</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>C525</mistnost>
+		<mistnostid>892</mistnostid>
+		<akce><kod>VB035/18</kod><nazev>English I</nazev><predmetid>585221</predmetid></akce>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+</den>
+<den id="Čt" rows="3">
+<radek num="1">
+
+	<slot pdiff="13" diff="22" odcas="07:00" docas="08:50">
+		<mistnost>COMPK6,609</mistnost>
+		<mistnostid>9678</mistnostid>
+		<akce><kod>Bi1051</kod><nazev>Úvod do studia matem. biol.</nazev><predmetid>557431</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="10:00" docas="11:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>MB000</kod><nazev>Matematická analýza I</nazev><predmetid>585078</predmetid></akce>
+	</slot>
+	<break pdiff="1" diff="2"/>
+
+	<slot pdiff="20" diff="34" odcas="12:00" docas="14:50">
+		<mistnost>D1</mistnost>
+		<mistnostid>534</mistnostid>
+		<akce><kod>PB151</kod><nazev>Výpočetní systémy</nazev><predmetid>585120</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>A11/114</mistnost>
+		<mistnostid>11683</mistnostid>
+		<akce><kod>BKBC011p</kod><nazev>Biochemie</nazev><predmetid>587907</predmetid></akce>
+	<poznamka id="2"/>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+<radek num="2">
+	<break pdiff="7" diff="12"/>
+
+	<slot pdiff="13" diff="22" odcas="08:00" docas="09:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>VB005</kod><nazev>Panorama fyziky I</nazev><predmetid>585217</predmetid></akce>
+	</slot>
+	<break pdiff="15" diff="26"/>
+
+	<slot pdiff="20" diff="34" odcas="12:00" docas="14:50">
+		<mistnost>D2</mistnost>
+		<mistnostid>533</mistnostid>
+		<akce><kod>PB151</kod><nazev>Výpočetní systémy</nazev><predmetid>585120</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="16:00" docas="17:50">
+		<mistnost>A11/334</mistnost>
+		<mistnostid>11688</mistnostid>
+		<akce><kod>BKBC011p</kod><nazev>Biochemie</nazev><predmetid>587907</predmetid></akce>
+	<poznamka id="3"/>
+	</slot>
+	<break pdiff="14" diff="24"/>
+</radek>
+<radek num="3">
+	<break pdiff="35" diff="60"/>
+
+	<slot pdiff="20" diff="34" odcas="12:00" docas="14:50">
+		<mistnost>D3</mistnost>
+		<mistnostid>2362</mistnostid>
+		<akce><kod>PB151</kod><nazev>Výpočetní systémy</nazev><predmetid>585120</predmetid></akce>
+	</slot>
+	<break pdiff="35" diff="60"/>
+</radek>
+</den>
+<den id="Pá" rows="1">
+<radek num="1">
+
+	<slot pdiff="13" diff="22" odcas="07:00" docas="08:50">
+		<mistnost>BpeR</mistnost>
+		<mistnostid>8903</mistnostid>
+		<akce><kod>Bi1010c/04</kod><nazev>Systém a evoluce rostlin - cv.</nazev><predmetid>557426</predmetid></akce>
+	</slot>
+	<break pdiff="15" diff="26"/>
+
+	<slot pdiff="5" diff="10" odcas="11:00" docas="11:50">
+		<mistnost>COMPK6,609</mistnost>
+		<mistnostid>9678</mistnostid>
+		<akce><kod>MB000c</kod><nazev>Mat. analýza I - cv. s MAPLE</nazev><predmetid>556651</predmetid></akce>
+	</slot>
+	<break pdiff="8" diff="14"/>
+
+	<slot pdiff="13" diff="22" odcas="13:00" docas="14:50">
+		<mistnost>A,01026</mistnost>
+		<mistnostid>8082</mistnostid>
+		<akce><kod>M1110</kod><nazev>Lineární algebra a geom. I</nazev><predmetid>556680</predmetid></akce>
+	</slot>
+	<break pdiff="35" diff="60"/>
+</radek>
+</den>
+</tabulka>
+<poznamky>
+	<poznamka id="1">každé sudé úterý 12:00--13:50 (21.9., 5.10., 19.10., 2.11., 16.11., 30.11., 14.12.)</poznamka>
+	<poznamka id="2">Čt 16:00--17:50 (23.9., 30.9., 7.10., 14.10., 21.10., 4.11., 11.11., 18.11., 25.11., 2.12., 9.12., 16.12., 6.1.)</poznamka>
+	<poznamka id="3">Čt 11. 11. 16:00--17:50 (11.11.)</poznamka>
+</poznamky>
+<nezname>
+	<akce><kod>ONLINE_A</kod><nazev>Angličtina Online</nazev><predmetid>582769</predmetid></akce>
+	<akce><kod>ONLINE_A/Mid_B</kod><nazev>Angličtina Online</nazev><predmetid>582769</predmetid></akce>
+	<akce><kod>PV225</kod><nazev>Laboratoř systémové biologie</nazev><predmetid>585189</predmetid></akce>
+	<akce><kod>XK010</kod><nazev>Informační výchova (vědecké informace a jejich vyhledávání)</nazev><predmetid>558614</predmetid></akce>
+	<akce><kod>XK010/01</kod><nazev>Informační výchova (vědecké informace a jejich vyhledávání)</nazev><predmetid>558614</predmetid></akce>
+</nezname>
+</rozvrh>
